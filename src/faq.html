@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html', {
+        "nav__link1": "",
+        "nav__link2": "",
+        "nav__link3": "",
+        "nav__link4": "",
+        "nav__link5": "",
+        "nav__link6": "",
+        "nav__link7": "nav__link-active",
+        })
+
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <a href="#">Маркировка</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <span>Каплеструйная технология</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-wrap">
+            <div class="container">
+                <div class="page-nav-mob">
+                    <div class="page-nav-mob__trigger">Вопрос-ответ</div>
+                    <ul class="page-nav page-nav-v2">
+                        <li class="page-nav__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Информация о компании</a>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Партнёры</a>
+                        </li>
+                        <li class="page-nav__item active">
+                            <a href="#">Вопрос-ответ</a>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-wrap-body">
+                    <h1 class="page-wrap-body__title title">
+                        <span>Вопрос-ответ</span>
+                    </h1>
+                    <div class="faq">
+                        <div class="faq-item">
+                            <div class="faq-item__name">Максим Сергеевич</div>
+                            <span class="faq-item__position">мастер</span>
+                            <span class="faq-item__data">01.03.2017</span>
+                            <p class="faq-item__question">
+                                Подскажите, можно ли у вас быстро изготовить образцы? Если да, то сколько мне будет
+                                стоить около 8-12 качественно
+                                отмаркированных образцов?
+                            </p>
+                            <div class="faq-item__answer">
+                                <p>
+                                    — Добрый день, Максим Сергеевич!
+                                </p>
+                                <p>
+                                    В компании ООО "ДАТА-БАЙ" Вы можете сделать тестовые <b>образцы маркировки на Вашей
+                                        продукции совершенно бесплатно</b> в
+                                    необходимые Вам сроки. Специалисты компании изготовят требуемые Вам образцы с учетом
+                                    <a href="#">типа маркируемого материала</a>,
+                                    скорости Вашей производственной линии, количества символов наносимой информации и
+                                    других критериев.
+                                </p>
+                                <p>
+                                    В случае, если у Вас остались еще вопросы, вы можете задать их в данной теме или
+                                    обратиться за квалифицированной помощью
+                                    к специалистам компании по телефонам: <b>+37517 388-22-01</b> или <b>+37529
+                                        180-09-32</b>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-item__name">Евгений Станиславович</div>
+                            <span class="faq-item__position">ИП</span>
+                            <span class="faq-item__data">18.11.2015</span>
+                            <p class="faq-item__question">
+                                Предлагаемые не оригинальные расходные материалы гораздо дешевле оригинальных. Почему вы
+                                настаиваете на использовании
+                                именно оригинальных чернил и растворителя?
+                            </p>
+                            <div class="faq-item__answer">
+                                <p>
+                                    — Каждый производитель, в первую очередь, заинтересован в своей репутации,
+                                    лояльности потребителя а так же в качестве
+                                    своих товаров. Чернила и растворитель оригинального производителя специально
+                                    разработаны для его оборудования и
+                                    протестированы, таким образом, производитель берет на себя гарантию бесперебойной
+                                    работы оборудования.
+                                </p>
+                                <p>
+                                    Производители пиратских расходных материалов заинтересованы в одном - объемах продаж
+                                    и краткосрочной прибыли. Они
+                                    используют дешевые ингридиенты сомнительного качества, этим и объясняется такая
+                                    низкая цена. Они не заинтересованы в
+                                    бесперебойной работе вашего принтера или безопасности, при этом некоторые
+                                    составляющие пиратских чернил и растворнителя
+                                    могут быть опасны.
+                                </p>
+                                <p>
+                                    Так же посмотрите презентацию <a href="#">о рисках использования неоригинальных
+                                        расходных материалов.</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-item__name">Дарья</div>
+                            <span class="faq-item__position">ИП</span>
+                            <span class="faq-item__data">07.09.2015</span>
+                            <p class="faq-item__question">
+                                Здравствуйте, подскажите пожалуйста, какое оборудование является оптимальным для
+                                маркировки пластика?
+                            </p>
+                            <div class="faq-item__answer">
+                                <p>
+                                    — Здравствуйте! Обратите внимание на данную таблицу, в которой отображены технологии
+                                    и их применение.
+                                </p>
+                                <p>
+                                    <img loading="lazy" src="img/faq-item__answer.jpg" alt="img">
+                                </p>
+                                <p>
+                                    Таким образом, для маркировки пластика оптимально вам подойдут каплеструйные
+                                    маркираторы, термотрансферные принтеры (для
+                                    гибкого пластика) и лазерная маркировка (несмываемая).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="faq-form">
+                        <div class="faq-form__title">
+                            Оставьте свой вопрос:
+                        </div>
+                        <input class="faq-form__input" type="text" placeholder="Ф.И.О.">
+                        <input class="faq-form__input" type="text" placeholder="Название вашей компании">
+                        <textarea class="faq-form__textarea" placeholder="Ваш вопрос"></textarea>
+                        <button class="faq-form__btn button btn-red">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="request">
+            <div class="container">
+                <div class="request__inner">
+                    <div class="request__left">
+                        <h3 class="request__title">Если у вас возникли вопросы и нужна консультация, обращайтесь</h3>
+                        <p class="request__text">Связаться с нами можно по телефону, почте, форму заявки или по он-лайн
+                            чату у нас на сайте.</p>
+                        <p class="request__text">Мы обязательно подскажем правильное решение для вашего бизнеса.</p>
+                    </div>
+                    <div class="request__right">
+                        <a class="request__link request__link--tel" href="tel:+375173882201">+375 (17) 388-22-01</a>
+                        <a class="request__link request__link--mail" href="mailto:info@sys.by">info@data-by.by</a>
+                        <a class="reques__btn" href="#" class="button" target="_blank"
+                            title="Обратная связь «ДАТА-БАЙ» ">Заявка на консультацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

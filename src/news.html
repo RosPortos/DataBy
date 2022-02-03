@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html', {
+        "nav__link1": "",
+        "nav__link2": "",
+        "nav__link3": "",
+        "nav__link4": "",
+        "nav__link5": "",
+        "nav__link6": "",
+        "nav__link7": "nav__link-active",
+        })
+
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <a href="#">Маркировка</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <span>Каплеструйная технология</span>
+                </li>
+            </ul>
+        </div>
+
+        <section class="news">
+            <div class="container">
+                <h1 class="news__title title">
+                    <span>Новости</span>
+                </h1>
+                <div class="news__wrapper">
+                    <div class="news-item">
+                        <a href="#" class="news-item__img">
+                            <img loading="lazy" src="img/news-item__img.jpg" alt="img">
+                        </a>
+                        <a href="#" class="news-item__title">
+                            ДАТА-БАЙ стала авторизированным ресселером ZEBRA
+                        </a>
+                        <span class="news-item__data">02 Ноябрь 2021</span>
+                        <p class="news-item__descr">
+                            Мы рады сообщить, что с 2 ноября 2021 года ООО «ДАТА-БАЙ» стала авторизированным ресселером
+                            ZEBRA и расширяет свою
+                            продуктовую линейку промышленных принтеров и ТСД.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__img">
+                            <img loading="lazy" src="img/news-item__img2.jpg" alt="img">
+                        </a>
+                        <a href="#" class="news-item__title">
+                            Лазерная маркировка стали вместе с оборудованием Macsa ID
+                        </a>
+                        <span class="news-item__data">02 Ноябрь 2021</span>
+                        <p class="news-item__descr">
+                            Лазерное оборудование Macsa ID используется для кодирования и маркировки продуктов на самых
+                            разных материалах, в т.ч. на
+                            различных металлах.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__img">
+                            <img loading="lazy" src="img/news-item__img3.jpg" alt="img">
+                        </a>
+                        <a href="#" class="news-item__title">
+                            Предложения по обязательной маркировке питьевой воды поступили в Евразийскую экономическую
+                            комиссию.
+                        </a>
+                        <span class="news-item__data">02 Ноябрь 2021</span>
+                        <p class="news-item__descr">
+                            Предложения РФ по обязательной маркировке питьевой воды поступили в Евразийскую
+                            экономическую комиссию.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__img">
+                            <img loading="lazy" src="img/news-item__img4.jpg" alt="img">
+                        </a>
+                        <a href="#" class="news-item__title">
+                            «Честный знак»: ответы на популярные вопросы производителей молочной продукции
+                        </a>
+                        <span class="news-item__data">02 Ноябрь 2021</span>
+                        <p class="news-item__descr">
+                            В ходе конференция по маркировке молочной продукции для малых форм хозяйствования с объемом
+                            производства не более 2 тыс.
+                            единиц в сутки Ирина Кочумаскина, руководитель направления, ЦРПТ, ответила на популярные
+                            вопросы представителей молочной
+                            отрасли.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__img">
+                            <img loading="lazy" src="img/news-item__img5.jpg" alt="img">
+                        </a>
+                        <a href="#" class="news-item__title">
+                            Что дает маркировка производителям и потребителям?
+                        </a>
+                        <span class="news-item__data">02 Ноябрь 2021</span>
+                        <p class="news-item__descr">
+                            Экономия. Доступ к данным. Рост доверия. Возможность перед покупкой получить всю информацию
+                            о товаре и др.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__img">
+                            <img loading="lazy" src="img/news-item__img6.jpg" alt="img">
+                        </a>
+                        <a href="#" class="news-item__title">
+                            В Беларуси началась обязательная маркировка сыров и мороженого
+                        </a>
+                        <span class="news-item__data">02 Ноябрь 2021</span>
+                        <p class="news-item__descr">
+                            Обязательная <a href="#">маркировка сыров и мороженого в Беларуси</a> вступила в силу с 8
+                            июля.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__img">
+                            <img loading="lazy" src="img/news-item__img7.jpg" alt="img">
+                        </a>
+                        <a href="#" class="news-item__title">
+                            Эксперты оценили, как маркировка скажется на рынке антисептиков
+                        </a>
+                        <span class="news-item__data">02 Ноябрь 2021</span>
+                        <p class="news-item__descr">
+                            Введение обязательной маркировки для всей антисептической продукции позволит увеличить
+                            доходы легальных производителей -
+                            за счет сокращения нелегальных продаж на, как минимум, 50%.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__img">
+                            <img loading="lazy" src="img/news-item__img8.jpg" alt="img">
+                        </a>
+                        <a href="#" class="news-item__title">
+                            Маркировка товаров в РБ. Вопросы и ответы.
+                        </a>
+                        <span class="news-item__data">02 Ноябрь 2021</span>
+                        <p class="news-item__descr">
+                            На сайте размещены ответы на наиболее часто задаваемые вопросы по маркировке товаров
+                            средствами идентификации.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="request">
+            <div class="container">
+                <div class="request__inner">
+                    <div class="request__left">
+                        <h3 class="request__title">Если у вас возникли вопросы и нужна консультация, обращайтесь</h3>
+                        <p class="request__text">Связаться с нами можно по телефону, почте, форму заявки или по он-лайн
+                            чату у нас на сайте.</p>
+                        <p class="request__text">Мы обязательно подскажем правильное решение для вашего бизнеса.</p>
+                    </div>
+                    <div class="request__right">
+                        <a class="request__link request__link--tel" href="tel:+375173882201">+375 (17) 388-22-01</a>
+                        <a class="request__link request__link--mail" href="mailto:info@sys.by">info@data-by.by</a>
+                        <a class="reques__btn" href="#" class="button" target="_blank"
+                            title="Обратная связь «ДАТА-БАЙ» ">Заявка на консультацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

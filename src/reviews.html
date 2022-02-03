@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html', {
+        "nav__link1": "",
+        "nav__link2": "",
+        "nav__link3": "",
+        "nav__link4": "",
+        "nav__link5": "",
+        "nav__link6": "",
+        "nav__link7": "nav__link-active",
+        })
+
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">О компании</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <span>Отзывы</span>
+                </li>
+            </ul>
+        </div>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__inner">
+                    <h1 class="title">
+                        <span>Отзывы</span>
+                    </h1>
+                    <div class="reviews__list" id="lightgallery">
+                        <a class="reviews__link" href="img/reviews1.png">
+                            <img class="reviews__img" src="img/reviews1.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews2.png">
+                            <img class="reviews__img" src="img/reviews2.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews3.png">
+                            <img class="reviews__img" src="img/reviews3.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews4.png">
+                            <img class="reviews__img" src="img/reviews4.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews1.png">
+                            <img class="reviews__img" src="img/reviews1.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews2.png">
+                            <img class="reviews__img" src="img/reviews2.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews3.png">
+                            <img class="reviews__img" src="img/reviews3.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews4.png">
+                            <img class="reviews__img" src="img/reviews4.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews1.png">
+                            <img class="reviews__img" src="img/reviews1.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews2.png">
+                            <img class="reviews__img" src="img/reviews2.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews3.png">
+                            <img class="reviews__img" src="img/reviews3.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews4.png">
+                            <img class="reviews__img" src="img/reviews4.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews1.png">
+                            <img class="reviews__img" src="img/reviews1.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews2.png">
+                            <img class="reviews__img" src="img/reviews2.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews3.png">
+                            <img class="reviews__img" src="img/reviews3.png" alt="">
+                        </a>
+                        <a class="reviews__link" href="img/reviews4.png">
+                            <img class="reviews__img" src="img/reviews4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="request">
+            <div class="container">
+                <div class="request__inner">
+                    <div class="request__left">
+                        <h3 class="request__title">Если у вас возникли вопросы и нужна консультация, обращайтесь</h3>
+                        <p class="request__text">Связаться с нами можно по телефону, почте, форму заявки или по он-лайн
+                            чату у нас на сайте.</p>
+                        <p class="request__text">Мы обязательно подскажем правильное решение для вашего бизнеса.</p>
+                    </div>
+                    <div class="request__right">
+                        <a class="request__link request__link--tel" href="tel:+375173882201">+375 (17) 388-22-01</a>
+                        <a class="request__link request__link--mail" href="mailto:info@sys.by">info@data-by.by</a>
+                        <a class="reques__btn" href="#" class="button" target="_blank" title="Обратная связь «ДАТА-БАЙ» ">Заявка на консультацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @include('partials/footer.html')
+    </div>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

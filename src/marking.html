@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html', {
+        "nav__link1": "nav__link-active",
+        "nav__link2": "",
+        "nav__link3": "",
+        "nav__link4": "",
+        "nav__link5": "",
+        "nav__link6": "",
+        "nav__link7": "",
+        })
+
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <a href="#">Маркировка</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <span>Каплеструйная технология</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="promo-slider">
+            <div class="swiper promo-slider-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="promo-slider-item">
+                            <img class="promo-slider-item__img" loading="lazy" src="img/promo-slider-item__img.jpg"
+                                alt="img">
+                            <div class="container">
+                                <div class="promo-slider-item__title">
+                                    Сливерные системы
+                                </div>
+                                <div class="promo-slider-item__descr">
+                                    Инновационные машины, созданные в результате накопленного опыта в упаковке.
+                                </div>
+                                <a href="#" class="promo-slider-item__btn button btn-red">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="promo-slider-item">
+                            <img class="promo-slider-item__img" loading="lazy" src="img/promo-slider-item__img.jpg"
+                                alt="img">
+                            <div class="container">
+                                <div class="promo-slider-item__title">
+                                    Сливерные системы
+                                </div>
+                                <div class="promo-slider-item__descr">
+                                    Инновационные машины, созданные в результате накопленного опыта в упаковке.
+                                </div>
+                                <a href="#" class="promo-slider-item__btn button btn-red">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="page-wrap">
+            <div class="container">
+                <div class="page-nav-mob">
+                    <div class="page-nav-mob__trigger">Каплеструйная технология</div>
+                    <ul class="page-nav">
+                        <li class="page-nav__item sub-item active">
+                            <a href="#">Каплеструйная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item sub-item">
+                                    <a href="#">Крупносимвольные маркираторы</a>
+                                    <ul class="sub-page-nav-two">
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры Zanasi (Италия)</a>
+                                        </li>
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры REA JET (Германия)</a>
+                                        </li>
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры LINX (Великобритания)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Лазерная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Ударная технология</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Электрохимическая технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Термотрансферная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Этикетировка</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Механические маркираторы</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Графические системы</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">RFID</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Машинное зрение</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-wrap-body">
+                    <h1 class="page-wrap-body__title title title--no-line">
+                        Каплеструйные принтеры для маркировки
+                    </h1>
+                    <div class="block-wrap block-wrap-v1">
+                        <a href="#" class="block-item">
+                            <div class="block-item__img">
+                                <img loading="lazy" src="img/block-wrap-item__img.jpg" alt="img">
+                            </div>
+                            <p class="block-item__title">
+                                Мелкосимвольные каплеструйные принтеры (маркираторы)
+                            </p>
+                        </a>
+                        <a href="#" class="block-item">
+                            <div class="block-item__img">
+                                <img loading="lazy" src="img/block-wrap-item__img2.jpg" alt="img">
+                            </div>
+                            <p class="block-item__title">
+                                Крупносимвольные каплеструйные принтеры (маркираторы)
+                            </p>
+                        </a>
+                        <a href="#" class="block-item">
+                            <div class="block-item__img">
+                                <img loading="lazy" src="img/block-wrap-item__img3.jpg" alt="img">
+                            </div>
+                            <p class="block-item__title">
+                                Комплектующие для каплеструйных принтеров
+                            </p>
+                        </a>
+                    </div>
+                    <div class="block-text block-text-v2">
+                        <h2>
+                            Для эффективной работы системы маркировки, обязательно нужно знать ответы на следующие
+                            вопросы
+                        </h2>
+                        <p>Во сколько вам обходится маркировка вашей продукции?</p>
+                        <p>Вам надоело во время сервиса менять дорогостоящие модули по цене в половину принтера?</p>
+                        <p>Сколько расходных материалов уходит в отходы в дорогостоящих чипованных картриджах?</p>
+                        <p>Какие убытки во время простоя всей линии из-за неисправности маркиратора?</p>
+                        <p>Сколько стоит время затраченное на ежедневное техническое обслуживание ваших маркираторов?
+                        </p>
+                        <h2>
+                            Каплеструйный принтер LINX снимает все эти вопросы и позволяет вам получить ряд преимуществ:
+                        </h2>
+                        <ul>
+                            <li>
+                                Низкие расходы
+                            </li>
+                            <li>
+                                Прогнозируемое обслуживание, периодичность увеличена до <b>6 000</b> часов.
+                            </li>
+                            <li>
+                                Меньше деталей для замены, чем в других каплеструйных маркираторах, уменьшено
+                                обслуживание печатающей головки, выигрыш
+                                от самых низких в своем классе расходов на обслуживание.
+                            </li>
+                            <li>
+                                Экономия времени на создание и редактирование текстов благодаря большому цветному экрану
+                                с полями для ввода кодов и
+                                легким созданием текстов.
+                            </li>
+                            <li>
+                                Сокращение числа ошибок и риска неправильного выбора жидкостей благодаря системе
+                                заправки SureFill® с защитой от ошибок.
+                            </li>
+                        </ul>
+                        <h2>
+                            Конвейер не остановится
+                        </h2>
+                        <ul>
+                            <li>
+                                Низкие расходы
+                            </li>
+                            <li>
+                                Прогнозируемое обслуживание, периодичность увеличена до <b>6 000</b> часов.
+                            </li>
+                            <li>
+                                Меньше деталей для замены, чем в других каплеструйных маркираторах, уменьшено
+                                обслуживание печатающей головки, выигрыш
+                                от самых низких в своем классе расходов на обслуживание.
+                            </li>
+                            <li>
+                                Экономия времени на создание и редактирование текстов благодаря большому цветному экрану
+                                с полями для ввода кодов и
+                                легким созданием текстов.
+                            </li>
+                            <li>
+                                Сокращение числа ошибок и риска неправильного выбора жидкостей благодаря системе
+                                заправки SureFill® с защитой от ошибок.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="promotion__social ">
+                        Поделиться:
+                        <ul class="promotion__social-list">
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/vkontakte.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/od.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/twitter.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/linkedin.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/viber2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/whatsapp.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/skype2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/telegram2.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="request">
+            <div class="container">
+                <div class="request__inner">
+                    <div class="request__left">
+                        <h3 class="request__title">Если у вас возникли вопросы и нужна консультация, обращайтесь</h3>
+                        <p class="request__text">Связаться с нами можно по телефону, почте, форму заявки или по он-лайн
+                            чату у нас на сайте.</p>
+                        <p class="request__text">Мы обязательно подскажем правильное решение для вашего бизнеса.</p>
+                    </div>
+                    <div class="request__right">
+                        <a class="request__link request__link--tel" href="tel:+375173882201">+375 (17) 388-22-01</a>
+                        <a class="request__link request__link--mail" href="mailto:info@sys.by">info@data-by.by</a>
+                        <a class="reques__btn" href="#" class="button" target="_blank"
+                            title="Обратная связь «ДАТА-БАЙ» ">Заявка на консультацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

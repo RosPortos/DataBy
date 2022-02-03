@@ -1,0 +1,116 @@
+.request__inner {
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    padding-bottom: 9px;
+    padding-top: 20px;
+
+    border-top: 3px dotted #ccc;
+
+    @media (max-width: 767px) {
+        max-width: 540px;
+        margin: 0 auto 30px;
+        flex-direction: column;
+    }
+}
+
+.request__left {
+    max-width: 66.66667%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+.request__title {
+    margin: 24px 0 15px;
+
+    font-weight: bold;
+    font-size: 27px;
+    color: #474747;
+    line-height: 30px;
+}
+
+.request__text {
+    margin: 3px 0 9px;
+
+    font-family: Arial;
+    font-weight: bold;
+    color: #474747;
+    line-height: 18px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.request__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media (max-width: 767px) {
+        align-items: flex-start;
+        padding: 0;
+    }
+}
+
+.request__link {
+    display: block;
+
+    color: #cd0a0a;
+    font-weight: bold;
+    text-decoration: underline;
+
+    transition: .2s linear;
+
+    &:hover {
+        @media(min-width:1024px) {
+            color: #474747;
+            text-decoration: none;
+        }
+    }
+}
+
+.request__link--tel {
+    margin: 24px 0 15px;
+
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.request__link--mail {
+    margin-bottom: 21px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.reques__btn {
+    background-color: #cd0a0a;
+
+    width: 208px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover {
+        background-color: #474747;
+        text-decoration: none;
+        color: #fff;
+    }
+}

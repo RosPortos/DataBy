@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html', {
+        "nav__link1": "",
+        "nav__link2": "",
+        "nav__link3": "",
+        "nav__link4": "",
+        "nav__link5": "",
+        "nav__link6": "",
+        "nav__link7": "nav__link-active",
+        })
+
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">О компании</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <span>Контакты</span>
+                </li>
+            </ul>
+        </div>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <h1 class="title">
+                        <span>Контакты</span>
+                    </h1>
+                    <div class="contacts__info">
+                        <div class="contacts__info-left">
+                            <h2 class="contacts__info-title">Адрес офиса и склада:</h2>
+                            <p class="contacts__info-text">220118, г. Минск, ул. Машиностроителей, 29А, 5 подъезд, 2 этаж</p>
+                            <h2 class="contacts__info-title">Юридический адрес:</h2>
+                            <p class="contacts__info-text">220033, Минск, ул. Нахимова 20, к. 401</p>
+                            <h2 class="contacts__info-title">Контактные телефоны:</h2>
+                            <ul class="contacts__info-list">
+                                <li class="contacts__info-item">
+                                    <a class="contacts__info-link" href="tel:+375173882201">+375 (17) 388-22-01</a>
+                                </li>
+                                <li class="contacts__info-item">
+                                    <a class="contacts__info-link" href="tel:+375173882202">+375 (17) 388-22-02</a>
+                                </li>
+                                <li class="contacts__info-item">
+                                    <a class="contacts__info-link" href="tel:+375173882203">+375 (17) 388-22-03</a>
+                                </li>
+                                <li class="contacts__info-item">
+                                    <a class="contacts__info-link" href="tel:+375291800932">+375 (29) 180-09-32 <span>(Velcom)</span></a>
+                                </li>
+                                <li class="contacts__info-item">
+                                    <a class="contacts__info-link" href="tel:+375336882203">+375 (33) 688-22-03 <span>(MTC)</span></a>
+                                </li>
+                            </ul>
+                            <h2 class="contacts__info-title">Электроная почта:</h2>
+                            <a class="contacts__info-link" href="mailto:info@data-by.by">info@data-by.by</a>
+                        </div>
+                        <div class="contacts__info-right">
+                            <div class="contacts__map">
+                                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d699.7523960503636!2d27.664350269689265!3d53.84860635219132!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sus!4v1641920255935!5m2!1suk!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promotion__social">
+                        Поделиться:
+                        <ul class="promotion__social-list">
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/vkontakte.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/od.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/twitter.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/linkedin.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/viber2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/whatsapp.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/skype2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/telegram2.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="contacts__form" action="/">
+                        <h1 class="title">
+                            <span>Контактная форма</span>
+                        </h1>
+                        <p class="contacts__form-text">Хотите узнать цены на оборудование или получить консультацию?
+                            Заполните, пожалуйста, форму обратной связи, и мы ответим на ваш вопрос в ближайшее (рабочее) время!</p>
+                        <div class="contacts__form-group">
+                            <p class="contacts__form-name required">Ваше имя</p>
+                            <input class="contacts__form-input" name="name" type="text">
+                        </div>
+                        <div class="contacts__form-group">
+                            <p class="contacts__form-name required">Ваш контактный телефон </p>
+                            <input class="contacts__form-input" name="tel" type="text">
+                        </div>
+                        <div class="contacts__form-group">
+                            <p class="contacts__form-name required">Ваш e-mail</p>
+                            <input class="contacts__form-input" name="email" type="text">
+                        </div>
+                        <div class="contacts__form-group contacts__form-group--select">
+                            <p class="contacts__form-name">Ваш регион</p>
+                            <select class="contacts__form-select" name="region">
+                                <option value="Выбрать регион">Выбрать регион</option>
+                                <option value="Минск">Минск</option>
+                                <option value="Минская область">Минская область</option>
+                                <option value="Брестская область">Брестская область</option>
+                                <option value="Витебская область">Витебская область</option>
+                                <option value="Гомельская область">Гомельская область</option>
+                                <option value="Гродненская область">Гродненская область</option>
+                                <option value="Могилёвская область">Могилёвская область</option>
+                                <option value="Я не из Беларуси">Я не из Беларуси</option>
+                            </select>
+                        </div>
+                        <div class="contacts__form-group">
+                            <p class="contacts__form-name">Ваш e-mail</p>
+                            <textarea class="contacts__form-textarea" name="message"></textarea>
+                        </div>
+                        <label class="contacts__form-checkbox">
+                            <input type="checkbox">
+                            Даю согласие на обработку персональных данных
+                        </label>
+                        <div class="contacts__form-captcha">
+                            <img src="img/captcha.jpg" alt="">
+                        </div>
+                        <button class="contacts__form-btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="employee">
+            <div class="container">
+                <h2 class="title">
+                    <span>Сотрудники компании</span>
+                </h2>
+                <ul class="employee__list">
+                    <li class="employee__block">
+                        <div class="employee__item">
+                            <div class="employee__img">
+                                <img src="img/employee1.jpg" alt="">
+                            </div>
+                            <div class="employee__info">
+                                <p class="employee__info-name">Грицевич Евгений Иванович</p>
+                                <p class="employee__info-item employee__info-item--region">Брестская обл.</p>
+                                <a class="employee__info-item employee__info-item--tel" href="tel:+375291803687">+ 375 29 180-36-87</a>
+                                <a class="employee__info-item employee__info-item--mail" href="mailto:brest@data-by.by">brest@data-by.by</a>
+                                <a class="employee__info-item employee__info-item--telegram" href="https://t.me/BrestDataby">Telegram</a>
+                            </div>
+                        </div>
+                        <div class="employee__item">
+                            <div class="employee__img">
+                                <img src="img/employee2.jpg" alt="">
+                            </div>
+                            <div class="employee__info">
+                                <p class="employee__info-name">Лайша Сергей Михайлович</p>
+                                <p class="employee__info-item employee__info-item--region">Гродненская и Витебская обл.</p>
+                                <a class="employee__info-item employee__info-item--tel" href="tel:+375291802041">+ 375 29 180-20-41</a>
+                                <a class="employee__info-item employee__info-item--mail" href="mailto:grodno@data-by.by">grodno@data-by.by</a>
+                                <a class="employee__info-item employee__info-item--telegram" href="https://t.me/grodnodataby">Telegram</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="employee__block">
+                        <div class="employee__item">
+                            <div class="employee__img">
+                                <img src="img/employee3.jpg" alt="">
+                            </div>
+                            <div class="employee__info">
+                                <p class="employee__info-name ">Степанцов Сергей Игоревич</p>
+                                <p class="employee__info-item employee__info-item--region">Минск</p>
+                                <a class="employee__info-item employee__info-item--tel" href="tel:+375293225740">+375 29 322-57-40</a>
+                                <a class="employee__info-item employee__info-item--mail" href="mailto:ss22@data-by.by">ss22@data-by.by</a>
+                                <a class="employee__info-item employee__info-item--telegram" href="https://t.me/minskdataby">Telegram</a>
+                            </div>
+                        </div>
+                        <div class="employee__item">
+                            <div class="employee__img">
+                                <img src="img/employee4.jpg" alt="">
+                            </div>
+                            <div class="employee__info">
+                                <p class="employee__info-name">Цыдик Валентин Альфредович</p>
+                                <p class="employee__info-item employee__info-item--region">Могилёвская и Витебская область</p>
+                                <a class="employee__info-item employee__info-item--tel" href="tel:+375291165477">+ 375 29 11-654-77</a>
+                                <a class="employee__info-item employee__info-item--mail" href="mailto:mogilev@data-by.by">mogilev@data-by.by</a>
+                                <a class="employee__info-item employee__info-item--telegram" href="https://t.me/mogilevdataby">Telegram</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="employee__block">
+                        <div class="employee__item">
+                            <div class="employee__img">
+                                <img src="img/employee5.jpg" alt="">
+                            </div>
+                            <div class="employee__info">
+                                <p class="employee__info-name">Касатов Дмитрий Владимирович</p>
+                                <p class="employee__info-item employee__info-item--region">Гомельская область</p>
+                                <a class="employee__info-item employee__info-item--tel" href="tel:+375291800742">+375 29 180-07-42</a>
+                                <a class="employee__info-item employee__info-item--mail" href="mailto:gomel@data-by.by">gomel@data-by.by</a>
+                                <a class="employee__info-item employee__info-item--telegram" href="https://t.me/homeldataby">Telegram</a>
+                            </div>
+                        </div>
+                        <div class="employee__item">
+                            <div class="employee__img">
+                                <img src="img/employee6.jpg" alt="">
+                            </div>
+                            <div class="employee__info">
+                                <p class="employee__info-name">Шамкуть Татьяна Ивановна</p>
+                                <p class="employee__info-item employee__info-item--region">Сервисная служба</p>
+                                <a class="employee__info-item employee__info-item--tel" href="tel:+375291800932">+375 29 180-09-32</a>
+                                <a class="employee__info-item employee__info-item--mail" href="mailto:office@data-by.by">office@data-by.by</a>
+                                <a class="employee__info-item employee__info-item--telegram" href="https://t.me/maindataby">Telegram</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="request">
+            <div class="container">
+                <div class="request__inner">
+                    <div class="request__left">
+                        <h3 class="request__title">Если у вас возникли вопросы и нужна консультация, обращайтесь</h3>
+                        <p class="request__text">Связаться с нами можно по телефону, почте, форму заявки или по он-лайн
+                            чату у нас на сайте.</p>
+                        <p class="request__text">Мы обязательно подскажем правильное решение для вашего бизнеса.</p>
+                    </div>
+                    <div class="request__right">
+                        <a class="request__link request__link--tel" href="tel:+375173882201">+375 (17) 388-22-01</a>
+                        <a class="request__link request__link--mail" href="mailto:info@sys.by">info@data-by.by</a>
+                        <a class="reques__btn" href="#" class="button" target="_blank" title="Обратная связь «ДАТА-БАЙ» ">Заявка на консультацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

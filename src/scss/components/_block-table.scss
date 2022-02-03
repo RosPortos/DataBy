@@ -1,0 +1,50 @@
+.block-table {
+    border: 1px solid #000;
+    margin-bottom: 40px;
+    div {
+        display: grid;
+        grid-template-columns: 14% 12% 22% 13% 39%;
+        &:first-child {
+            p {
+                &:nth-child(1) {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                    border-top: none;
+                }
+                &:nth-child(2) {
+                    grid-column-start: 2;
+                    grid-column-end: 6;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    border-right: none;
+                    border-top: none;
+                }
+            }
+        }
+        p {
+            color: #474747;
+            font-size: 12px;
+            text-align: left;
+            line-height: 20px;
+            @include font-family;
+            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+            border-right: 1px solid #000;
+            border-top: 1px solid #000;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        a {
+            color: #0563c1;
+            font-size: 14px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                text-shadow: .5px 0 0 currentColor;
+            }
+        }
+    }
+}

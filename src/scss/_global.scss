@@ -1,0 +1,139 @@
+* {
+    font-family: "Cuprum", sans-serif;
+}
+
+body {
+    &.scroll-hide {
+        @media(max-width:1023px) {
+            overflow: hidden;
+        }
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.breadcrumbs-list {
+    padding: 12px 0 24px;
+    position: relative;
+    z-index: 5;
+
+    &__item {
+        display: inline-block;
+        padding-right: 24px;
+        position: relative;
+
+        a,
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #777;
+            transition: all .3s;
+        }
+
+        a {
+            text-decoration: underline;
+
+            &:hover {
+                text-shadow: .5px 0 0 currentColor;
+            }
+        }
+
+        span {
+            color: #1b1b1b;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: url('../img/arrow-ba.svg');
+            top: 0px;
+            right: 7px;
+        }
+    }
+}
+
+
+.button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #FFFFFF;
+    }
+
+    &.btn-red {
+        background: #CF0612;
+
+        &:hover {
+            background: #B4000B;
+        }
+    }
+}
+
+
+.title {
+    color: #474747;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 0.1px;
+        background-color: #474747;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    span {
+        background: #fff;
+        display: inline-block;
+        padding: 0 15px 0 0;
+        z-index: 2;
+    }
+
+    &--no-line::before {
+        display: none;
+    }
+}
+
+.p {
+    margin: 3px 0 9px;
+
+    @include font-family;
+    color: #474747;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}

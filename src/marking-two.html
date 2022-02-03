@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html', {
+        "nav__link1": "nav__link-active",
+        "nav__link2": "",
+        "nav__link3": "",
+        "nav__link4": "",
+        "nav__link5": "",
+        "nav__link6": "",
+        "nav__link7": "",
+        })
+
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <a href="#">Маркировка</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <span>Каплеструйная технология</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-wrap">
+            <div class="container">
+                <div class="page-nav-mob">
+                    <div class="page-nav-mob__trigger">Каплеструйная технология</div>
+                    <ul class="page-nav">
+                        <li class="page-nav__item sub-item active">
+                            <a href="#">Каплеструйная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item active">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item sub-item">
+                                    <a href="#">Крупносимвольные маркираторы</a>
+                                    <ul class="sub-page-nav-two">
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры Zanasi (Италия)</a>
+                                        </li>
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры REA JET (Германия)</a>
+                                        </li>
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры LINX (Великобритания)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Лазерная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Ударная технология</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Электрохимическая технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Термотрансферная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Этикетировка</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Механические маркираторы</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Графические системы</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">RFID</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Машинное зрение</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-wrap-body">
+                    <h1 class="page-wrap-body__title title title--no-line">
+                        Мелкосимвольные каплеструйные принтеры (маркираторы)
+                    </h1>
+                    <div class="block-text block-text-v2">
+                        <p>
+                            Мелкосимвольная маркировка – это высокие и сверхвысокие скорости печати, размеры шрифта от
+                            1,4 до 20 мм, возможность
+                            печати до 5 строк и простой интерфейс пользователя.
+                        </p>
+                        <p>
+                            Компания "ДАТА-БАЙ" является официальным поставщиком мелкосимвольных маркираторов
+                            производителя LINX (Великобритания).
+                        </p>
+                        <p>
+                            Высокопроизводительные <b>мелкосимвольные маркираторы Linx</b> (каплеструйные принтеры
+                            (CIJ-Continuous inkjet printer)
+                            предназначены для маркировки любых, даже самых сложных поверхностей. Каждый продукт включает
+                            в себя инновационность и
+                            простоту использования.
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Серия LINX 8900</b> — предназначена для печати текста, графики и QR-кодов,
+                                обеспечивающий бесперерывную маркировку с быстрой
+                                настройкой сообщений и удобным сервисным блоком.
+                            </li>
+                            <li>
+                                <b>Серия LINX 7900</b> — предназначена для решения более сложных задач и печати до 5-ти
+                                строк текста.
+                            </li>
+                            <li>
+                                <b>Серия LINX 5900</b> — предназначена для линий с легким и бесперебойным нанесением
+                                маркировки до трех строк текста и графики.
+                            </li>
+                        </ul>
+                        <h2>
+                            Информация о ключевых характеристиках каплеструйных маркираторов Linx
+                        </h2>
+                        <p>&nbsp;</p>
+                        <p>Каплеструйные принтеры Linx пользуются большой популярностью на предприятиях Беларуси.</p>
+                        <p>Подробнее с параметрами маркираторов Linx вы можете ознакомиться в разделах, представленных
+                            ниже.</p>
+                    </div>
+
+                    <div class="block-table">
+                        <div>
+                            <p>
+                                Маркираторы
+                            </p>
+                            <p>
+                                Параметры нанесения кодов и маркировки
+                            </p>
+                            <p>
+                                Кол-во строк
+                            </p>
+                            <p>
+                                Высота маркировки
+                            </p>
+                            <p>
+                                Макс. скорость
+                            </p>
+                            <p>
+                                Дополнительные сведения
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <a href="#">Linx 7900</a>
+                            </p>
+                            <p>
+                                до 5
+                            </p>
+                            <p>
+                                от 1,1 до 15,0 мм
+                            </p>
+                            <p>
+                                до 8,41 м/сек
+                            </p>
+                            <p>
+                                Фиксированные или переменные данные (дата, время, номер смены, партии, счетчик), функция
+                                сдвига даты, логотипы,
+                                штрихкоды
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <a href="#">Linx 7900 Spectrum</a>
+                            </p>
+                            <p>
+                                до 5
+                            </p>
+                            <p>
+                                от 2,1 до 13,8 мм
+                            </p>
+                            <p>
+                                до 7,28 м/сек
+                            </p>
+                            <p>
+                                Маркировка пигментными чернилами на темных или цветных поверхностях (например, на резине
+                                или экструдированной
+                                пластмассе).
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <a href="#">Linx 7900BC</a>
+                            </p>
+                            <p>
+                                до 5
+                            </p>
+                            <p>
+                                от 1,1 до 13,8 мм
+                            </p>
+                            <p>
+                                до 8,41 м/сек
+                            </p>
+                            <p>
+                                Специально разработан для надежной каплеструйной маркировки бутылок. Уникальная система
+                                воздушного ножа и печатающей
+                                головки обеспечивают сушку бутылки перед маркировкой для хорошей адгезии чернил.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <a href="#">Linx 7900E</a>
+                            </p>
+                            <p>
+                                до 4
+                            </p>
+                            <p>
+                                от 1,1 до 8 мм
+                            </p>
+                            <p>
+                                до 8,41 м/сек
+                            </p>
+                            <p>
+                                Решение для маркировки электронных компонентов позволяет наносить мелкосимвольные коды
+                                высотой от 1,1 мм, а также
+                                печатать вертикальные строки «башенкой». Специальные чернила без хрома и галогенов.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <a href="#">Linx 7900FG</a>
+                            </p>
+                            <p>
+                                до 5
+                            </p>
+                            <p>
+                                от 1,1 до 13,8 мм
+                            </p>
+                            <p>
+                                до 8,41 м/сек
+                            </p>
+                            <p>
+                                Разработан для надежной печати специальными пищевыми чернилами в соответствии с
+                                требованиями Управления по санитарному
+                                надзору за качеством пищевых продуктов и медикаментов США или ЕС.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <a href="#">Linx 7900 Swift</a>
+                            </p>
+                            <p>
+                                до 2
+                            </p>
+                            <p>
+                                от 1,1 до 13,8 мм
+                            </p>
+                            <p>
+                                до 8,41 м/сек
+                            </p>
+                            <p>
+                                Печать узким шрифтом на малой площади, например бутылочных крышках при скорости линии до
+                                6,83 м/с (для однострочного
+                                кода).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block-wrap block-wrap-v2">
+                        <div class="block-item-wrap">
+                            <a href="#" class="block-item">
+                                <div class="block-item__img">
+                                    <img loading="lazy" src="img/block-wrap-item__img4.jpg" alt="img">
+                                </div>
+                                <div class="block-item__title">
+                                    Каплеструйный принтер (маркиратор) Linx 8900/8910 Linx 8900/8910
+                                </div>
+                                <div class="block-item__descr">
+                                    НОВИНКА от LINX! Печать в 3 строки; Высота строк от 1,8 до 8,8
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block-item-wrap">
+                            <a href="#" class="block-item">
+                                <div class="block-item__img">
+                                    <img loading="lazy" src="img/block-wrap-item__img5.jpg" alt="img">
+                                </div>
+                                <div class="block-item__title">
+                                    Каплеструйный принтер (маркиратор) Linx 8920
+                                </div>
+                                <div class="block-item__descr">
+                                    НОВИНКА от LINX! Печать в 3 строки; Высота строк от 1,8 до 8,8
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block-item-wrap">
+                            <a href="#" class="block-item">
+                                <div class="block-item__img">
+                                    <img loading="lazy" src="img/block-wrap-item__img5.jpg" alt="img">
+                                </div>
+                                <div class="block-item__title">
+                                    Каплеструйный принтер (маркиратор) Linx 8900/8910 Linx 8900/8910
+                                </div>
+                                <div class="block-item__descr">
+                                    <p>Кол-во строк: от 1 до 5</p>
+                                    <p>Высота символов: до 20 мм</p>
+                                    <p>Скорость печати: до 6,25 м/сек</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block-item-wrap">
+                            <a href="#" class="block-item">
+                                <div class="block-item__img">
+                                    <img loading="lazy" src="img/block-wrap-item__img5.jpg" alt="img">
+                                </div>
+                                <div class="block-item__title">
+                                    Каплеструйный принтер (маркиратор) Linx 8900/8910 Linx 8900/8910
+                                </div>
+                                <div class="block-item__descr">
+                                    НОВИНКА от LINX! Печать в 3 строки; Высота строк от 1,8 до 8,8
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block-item-wrap">
+                            <a href="#" class="block-item">
+                                <div class="block-item__img">
+                                    <img loading="lazy" src="img/block-wrap-item__img5.jpg" alt="img">
+                                </div>
+                                <div class="block-item__title">
+                                    Каплеструйный принтер (маркиратор) Linx 8920
+                                </div>
+                                <div class="block-item__descr">
+                                    НОВИНКА от LINX! Печать в 3 строки; Высота строк от 1,8 до 8,8
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block-item-wrap">
+                            <a href="#" class="block-item">
+                                <div class="block-item__img">
+                                    <img loading="lazy" src="img/block-wrap-item__img6.jpg" alt="img">
+                                </div>
+                                <div class="block-item__title">
+                                    Каплеструйный принтер (маркиратор) Linx 8900/8910 Linx 8900/8910
+                                </div>
+                                <div class="block-item__descr">
+                                    <p>Кол-во строк: от 1 до 5</p>
+                                    <p>Высота символов: до 20 мм</p>
+                                    <p>Скорость печати: до 6,25 м/сек</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block-item-wrap">
+                            <a href="#" class="block-item">
+                                <div class="block-item__img">
+                                    <img loading="lazy" src="img/block-wrap-item__img6.jpg" alt="img">
+                                </div>
+                                <div class="block-item__title">
+                                    Каплеструйный принтер (маркиратор) Linx 8900/8910 Linx 8900/8910
+                                </div>
+                                <div class="block-item__descr">
+                                    <p>Печать на бутылках.</p>
+                                    <p>Кол-во строк: 1-3</p>
+                                    <p>Высота символов: 1,4-4,6 мм</p>
+                                    <p>Скорость печати: 6,83 м/с</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="promotion__social ">
+                        Поделиться:
+                        <ul class="promotion__social-list">
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/vkontakte.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/od.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/twitter.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/linkedin.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/viber2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/whatsapp.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/skype2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/telegram2.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="request">
+            <div class="container">
+                <div class="request__inner">
+                    <div class="request__left">
+                        <h3 class="request__title">Если у вас возникли вопросы и нужна консультация, обращайтесь</h3>
+                        <p class="request__text">Связаться с нами можно по телефону, почте, форму заявки или по он-лайн
+                            чату у нас на сайте.</p>
+                        <p class="request__text">Мы обязательно подскажем правильное решение для вашего бизнеса.</p>
+                    </div>
+                    <div class="request__right">
+                        <a class="request__link request__link--tel" href="tel:+375173882201">+375 (17) 388-22-01</a>
+                        <a class="request__link request__link--mail" href="mailto:info@sys.by">info@data-by.by</a>
+                        <a class="reques__btn" href="#" class="button" target="_blank"
+                            title="Обратная связь «ДАТА-БАЙ» ">Заявка на консультацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html', {
+        "nav__link1": "nav__link-active",
+        "nav__link2": "",
+        "nav__link3": "",
+        "nav__link4": "",
+        "nav__link5": "",
+        "nav__link6": "",
+        "nav__link7": "",
+        })
+
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <a href="#">Маркировка</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <span>Каплеструйная технология</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-wrap">
+            <div class="container">
+                <div class="page-nav-mob">
+                    <div class="page-nav-mob__trigger">Каплеструйная технология</div>
+                    <ul class="page-nav">
+                        <li class="page-nav__item sub-item active">
+                            <a href="#">Каплеструйная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item active">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item sub-item">
+                                    <a href="#">Крупносимвольные маркираторы</a>
+                                    <ul class="sub-page-nav-two">
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры Zanasi (Италия)</a>
+                                        </li>
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры REA JET (Германия)</a>
+                                        </li>
+                                        <li class="sub-page-nav-two__item">
+                                            <a href="#">Принтеры LINX (Великобритания)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Лазерная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Ударная технология</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Электрохимическая технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Термотрансферная технология</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Этикетировка</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">Механические маркираторы</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Графические системы</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="page-nav__item">
+                            <a href="#">RFID</a>
+                        </li>
+                        <li class="page-nav__item sub-item">
+                            <a href="#">Машинное зрение</a>
+                            <ul class="sub-page-nav">
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Мелкосимвольные маркираторы</a>
+                                </li>
+                                <li class="sub-page-nav__item">
+                                    <a href="#">Комплектующие</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-wrap-body">
+                    <h1 class="page-wrap-body__title title title--no-line">
+                        Каплеструйный принтер (маркиратор) Linx 8900/8910
+                    </h1>
+
+                    <div class="img-list">
+                        <div class="img-list__wrapper">
+                            <div class="img-list__img">
+                                <img loading="lazy" src="img/block-wrap-item__img4.jpg" alt="img">
+                            </div>
+                            <div class="img-list__text">
+                                <p>
+                                    Новейшая разработка компании Linx: традиционно надежный, простой в обслуживании, с
+                                    новыми функциями и возможностями
+                                    принтер LINX 8900!
+                                </p>
+                                <ul>
+                                    <li>
+                                        Увеличенный сервисный интервал до 13000 часов;
+                                    </li>
+                                    <li>
+                                        Возможность проводить ТО самостоятельно, без вызова специалиста
+                                        (<a href="#">видео</a>);
+                                    </li>
+                                    <li>
+                                        Дистанционное управление и мониторинг по интернету;
+                                    </li>
+                                    <li>
+                                        Дистанционная диагностика специалистами LINX по интернету;
+                                    </li>
+                                    <li>
+                                        Печать DataMatrix и QR кодов;
+                                    </li>
+                                    <li>
+                                        Очень эффективная автоматическая само-очистка печатающей головки;
+                                    </li>
+                                    <li>
+                                        Легкий пуск без промывки через 3-4 месяца простоя;
+                                    </li>
+                                    <li>
+                                        Сенсорный цветной дисплей с диагональю 10¨ с возможностью использования как
+                                        сигнальный маяк.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="img-list__bottom-text">
+                            Акция!!! Первые 10 принтеров продаются по специальной цене!
+                        </span>
+                    </div>
+
+                    <div class="block-tabs">
+                        <div class="tabs-wrapper tab-link-wrapper">
+                            <a class="tab tab-active" href="#">
+                                Описание
+                            </a>
+                            <a class="tab" href="#">
+                                Характеристики
+                            </a>
+                            <a class="tab" href="#">
+                                Фото и Видео
+                            </a>
+                            <a class="tab" href="#">
+                                Документация
+                            </a>
+                        </div>
+                        <div class="tabs-wrapper tab-content-wrapper">
+                            <div class="tabs-content tabs-content-active">
+                                <div class="block-text block-text-v2">
+                                    <p>
+                                        <b>Каплеструйный принтер LINX – последний честный маркиратор!</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Знаете ли вы, во сколько вам обходится маркировка вашей продукции?
+                                        </li>
+                                        <li>
+                                            Вы считали убытки во время простоя всей линии из-за неисправности
+                                            маркиратора?
+                                        </li>
+                                        <li>
+                                            Сколько стоит время, затраченное на ежедневное техническое обслуживание
+                                            ваших маркираторов?
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Каплеструйный принтер Linx снимает все эти вопросы и позволит вам получить ряд
+                                        преимуществ и выгод.
+                                    </p>
+                                    <p>
+                                        <b>Используя каплеструйный принтер Linx 8900 в маркировке продукции, вы
+                                            получаете:</b>
+                                        <br><br>
+                                        <b>Чистая маркировка:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            герметичная картриджная система позволяет избежать случайных проливаний или
+                                            разбрызгивания.
+                                        </li>
+                                        <li>
+                                            уникальная технология автопромывки печатающей головки Linx, обеспечивает
+                                            чистоту на Ваших линиях.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <b>Лучшая надежность и минимальные сбои:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            системный монитор измеряет ключевые рабочие параметры для ранней
+                                            идентификации потенциальных проблем, которые могут
+                                            вызвать простой оборудования.
+                                        </li>
+                                        <li>
+                                            герметично запаянная печатающая головка обеспечивает защиту ее критических
+                                            компонентов от суровых условий окружающей
+                                            среды.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <b>Больше визуализации:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            отображаемая информация в реальном времени по производительности
+                                            (продуктов/час) или по остающемуся времени для
+                                            окончания партии.
+                                        </li>
+                                        <li>
+                                            журнализация остановки производственного процесса позволяет зафиксировать
+                                            любой простой линии с Вашими собственными
+                                            комментариями.
+                                        </li>
+                                        <li>
+                                            заставка «Сигнализация» обеспечивает быструю и заметную нотификацию о
+                                            необходимости обратить внимание на принтер для
+                                            обеспечения безостановочной работы Вашей линии
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <b>Само-обслуживание:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            простая и быстрая процедура самообслуживания, занимает меньше 5 минут
+                                            времени оператора и меньше 30 минут в целом,
+                                            осуществляемая по экранным инструкциям.
+                                        </li>
+                                        <li>
+                                            печатающая головка Linx не требует какой-либо регулировки, что позволяет Вам
+                                            не вдаваться в подробности ее работы для
+                                            достижения стабильного качества печати и производительности
+                                        </li>
+                                        <li>
+                                            одношаговое изменения сообщения с помощью кнопки «Обновить» дает возможность
+                                            быстро менять продукты.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs-content">
+                                <div class="block-text block-text-v2">
+                                    <div class="tabs-table">
+                                        <div>
+                                            <span><b>Скорость печати</b></span>
+                                            <span><b>Linx 8900 / 8910</b></span>
+                                        </div>
+                                        <div>
+                                            <span>Количество строк</span>
+                                            <span>1,2 или 3</span>
+                                        </div>
+                                        <div>
+                                            <span>Диапазон высоты текста</span>
+                                            <span>от 1,8 до 8,8 мм / от 1,8 до 20 мм</span>
+                                        </div>
+                                        <div>
+                                            <span><b>Максимальная скорость</b></span>
+                                            <span></span>
+                                        </div>
+                                        <div>
+                                            <span>Однострочная печать (высота символов 5 капель)</span>
+                                            <span>2,92 м/с / 6,25 м/с</span>
+                                        </div>
+                                        <div>
+                                            <span>Однострочная печать (высота символов 7 капель)</span>
+                                            <span>2,43 м/с / 4,89 м/с</span>
+                                        </div>
+                                        <div>
+                                            <span>Двухстрочная печать (высота символов 7 капель)</span>
+                                            <span>1,48 м/с / 2,09 м/с</span>
+                                        </div>
+                                        <div>
+                                            <span>Трехстрочная печать (высота символов 7 капель)</span>
+                                            <span>0,83 м/с 1,01 м/с</span>
+                                        </div>
+                                        <div>
+                                            <span>Максимальное количество знаков в секунду</span>
+                                            <span>1333 / 2222</span>
+                                        </div>
+                                        <div>
+                                            <span>Расстояние от печатной головки до продукта</span>
+                                            <span>12 мм</span>
+                                        </div>
+                                    </div>
+                                    <div class="block-text block-text-v2">
+                                        <h2>
+                                            Характеристики аппаратной части
+                                        </h2>
+                                        <p>
+                                            Сервисный модуль Easi-Change®, периодичность замены: до 18 месяцев (13 000
+                                            часов)*.
+                                            <br><br>
+                                            Уникальная функция автоматической промывки печатной головки -
+                                            рекомендованный период обслуживания печатной головки
+                                            составляет три месяца (100 пусков и остановок).
+                                            <br><br>
+                                            Контроль вязкости, времени пролета и температуры в печатающей головке.
+                                            <br><br>
+                                            Заправка чернилами и растворителем без остановки печати.
+                                            <br><br>
+                                            10-дюймовый полноцветный сенсорный экран с прочным, устойчивым к
+                                            растворителям полимерным покрытием.
+                                            <br><br>
+                                            Бесщеточная помпа в чернильной системе не требует ТО и плановых замен.
+                                            <br><br>
+                                            Возможен длительный простой принтера (до 3 месяцев) без промывки и слива
+                                            жидкостей.
+                                            <br><br>
+                                            Прочный, гибкий двухтрубный шланг надежен для печати сообщения на подвижном
+                                            манипуляторе.
+                                        </p>
+                                        <h2>
+                                            Характеристики программной части
+                                        </h2>
+                                        <p>
+                                            Запуск печати, приостановка печати и перекрытие подачи чернил нажатием одной
+                                            кнопки.
+                                            <br><br>
+                                            Автоматическое выключение питания после остановки струи.
+                                            <br><br>
+                                            Простое создание и редактирование сообщений (WYSIWYG) с расположением
+                                            элементов методом перетаскивания полей и функцией
+                                            масштабирования текста.
+                                            <br><br>
+                                            Счетчик общего количества отпечатков, текущего сообщения и текущей партии.
+                                            <br><br>
+                                            Вывод на экран сохраненных текстов для просмотра (WYSIWYG).
+                                            <br><br>
+                                            Функции защиты паролем с различными уровнями доступа.
+                                            <br><br>
+                                            Создание/редактирование сообщений во время печати.
+                                            <br><br>
+                                            Контроль наработки на экране, расчетное время завершения текущего задания,
+                                            включение/выключение индикации остатка
+                                            текущего задания.
+                                            <br><br>
+                                            Журнал событий с учетом остановок и описанием причин.
+                                            <br><br>
+                                            Архивный журнал норм выработки, остановок производственной линии и
+                                            количеством отпечатков, который может
+                                            экспортироваться через USB-порт.
+                                            <br><br>
+                                            Выводимые на экран индикаторы уровней жидкостей, предупреждение за 12 часов
+                                            до остановки принтера.
+                                            <br><br>
+                                            Экранная справка и сведения о диагностике.
+                                            <br><br>
+                                            Автоматический выбор шрифта и формата текста PrintSync на основании
+                                            выбранного стиля текста и скорости производственной
+                                            линии.
+                                            <br><br>
+                                            Разные языки для ввода (выбираются пользователем).
+                                            <br><br>
+                                            Простая и быстрая настройка параметров печати
+                                            <br><br>
+                                            Создание резервной копии, копирование и восстановление сохраненных сообщений
+                                            и настроек принтера с помощью накопителя
+                                            USB.
+                                            <br><br>
+                                            Простой протокол обмена данными (YAML) и интерфейс удаленной связи для
+                                            управления с ПК или ПЛК через порт Ethernet или
+                                            RS-232.
+                                        </p>
+                                        <h2>
+                                            Функции печати сообщений
+                                        </h2>
+                                        <p>
+                                            Текст, символы и цифры.
+                                            <br><br>
+                                            Подсказки для редактирования сообщений
+                                            <br><br>
+                                            Простое изменение параметров сообщения (высота, ширина и задержка).
+                                            <br><br>
+                                            Автоматические поля для печати даты и времени
+                                            <br><br>
+                                            Автоматическое изменение даты. Добавление к текущему времени количества
+                                            секунд, минут и часов или к текущей дате любого
+                                            количества дней, недель или месяцев.
+                                            <br><br>
+                                            Сброс счетчика одним касанием крана принтера, а также сброс по внешнему
+                                            триггеру
+                                            <br><br>
+                                            Печать порядковых номеров, счет в прямой и обратной последовательности с
+                                            переменными интервалами.
+                                            <br><br>
+                                            Опция автоматического перехода на летнее время.
+                                            <br><br>
+                                            Количество сохраняемых сообщений: до 1000 во внутренней памяти принтера
+                                            (зависит от содержимого сообщения), большее
+                                            количество может быть сохранено на накопителе USB.
+                                            <br><br>
+                                            Печать жирного текста (до 9-кратного утолщения).
+                                            <br><br>
+                                            Вращение символов (печать вертикальных строк).
+                                            <br><br>
+                                            Печать по расписанию (содержание сообщений автоматически изменяется в
+                                            определенное время).
+                                            <br><br>
+                                            Графику и логотипы можно импортировать в принтер через порт USB.
+                                            <br><br>
+                                            Штрихкоды (ITF 2 из 5, Code 39, Code 128, EAN 13, EAN 8, UPCA, Pharmacode,
+                                            Data Matrix, QR-код).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-content">
+                                <div class="tabs-gallery " id="lightgallery">
+                                    <a href="img/tabs-gallery__item.jpg" class="tabs-gallery__item">
+                                        <img loading="lazy" src="img/tabs-gallery__item.jpg" alt="img">
+                                    </a>
+                                    <a href="img/tabs-gallery__item2.jpg" class="tabs-gallery__item">
+                                        <img loading="lazy" src="img/tabs-gallery__item2.jpg" alt="img">
+                                    </a>
+                                    <a href="img/tabs-gallery__item3.jpg" class="tabs-gallery__item">
+                                        <img loading="lazy" src="img/tabs-gallery__item3.jpg" alt="img">
+                                    </a>
+                                    <a href="img/tabs-gallery__item4.jpg" class="tabs-gallery__item">
+                                        <img loading="lazy" src="img/tabs-gallery__item4.jpg" alt="img">
+                                    </a>
+                                    <a href="img/tabs-gallery__item5.jpg" class="tabs-gallery__item">
+                                        <img loading="lazy" src="img/tabs-gallery__item5.jpg" alt="img">
+                                    </a>
+                                    <a href="img/tabs-gallery__item6.jpg" class="tabs-gallery__item">
+                                        <img loading="lazy" src="img/tabs-gallery__item6.jpg" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tabs-content">
+                                <div class="tabs-doc">
+                                    <div class="tabs-doc__item">
+                                        <div class="tabs-doc__item--img">
+                                            <img loading="lazy" src="img/promo-doc__item--img.png" alt="img">
+                                        </div>
+                                        <div class="tabs-doc__item--name">
+                                            Гид по распечатке образцов
+                                        </div>
+                                        <a href="#" download="#" class="tabs-doc__item--btn">
+                                            Скачать документ
+                                        </a>
+                                    </div>
+                                    <div class="tabs-doc__item">
+                                        <div class="tabs-doc__item--img">
+                                            <img loading="lazy" src="img/promo-doc__item--img.png" alt="img">
+                                        </div>
+                                        <div class="tabs-doc__item--name">
+                                            Гид по распечатке образцов
+                                        </div>
+                                        <a href="#" download="#" class="tabs-doc__item--btn">
+                                            Скачать документ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="promotion__social ">
+                        Поделиться:
+                        <ul class="promotion__social-list">
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/vkontakte.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/od.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/twitter.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/linkedin.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/viber2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/whatsapp.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/skype2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="promotion__social-item">
+                                <a class="promotion__social-link" href="#">
+                                    <img src="img/telegram2.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="request">
+            <div class="container">
+                <div class="request__inner">
+                    <div class="request__left">
+                        <h3 class="request__title">Если у вас возникли вопросы и нужна консультация, обращайтесь</h3>
+                        <p class="request__text">Связаться с нами можно по телефону, почте, форму заявки или по он-лайн
+                            чату у нас на сайте.</p>
+                        <p class="request__text">Мы обязательно подскажем правильное решение для вашего бизнеса.</p>
+                    </div>
+                    <div class="request__right">
+                        <a class="request__link request__link--tel" href="tel:+375173882201">+375 (17) 388-22-01</a>
+                        <a class="request__link request__link--mail" href="mailto:info@sys.by">info@data-by.by</a>
+                        <a class="reques__btn" href="#" class="button" target="_blank"
+                            title="Обратная связь «ДАТА-БАЙ» ">Заявка на консультацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

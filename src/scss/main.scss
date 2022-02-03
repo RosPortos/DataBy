@@ -1,0 +1,38 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "null";
+@import "global";
+
+// подключения компонентов страницы
+@import "./components/promo";
+
+
+
+@import "./components/header";
+@import "./components/nav";
+@import "./components/main-body";
+@import "./components/aside-block";
+@import "./components/page-wrap";
+@import "./components/block-wrap";
+@import "./components/block-table";
+@import "./components/partners";
+@import "./components/faq";
+@import "./components/news";
+
+
+
+
+
+
+@import "./components/request";
+@import "./components/promotion";
+@import "./components/contacts";
+@import "./components/employee";
+@import "./components/reviews";
+@import "./components/footer";
+
+
+
+@import "./components/media";
