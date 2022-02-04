@@ -195,6 +195,11 @@
         max-width: fit-content;
         padding: 5px 10px;
     }
+    .tabs-doc__btn {
+        margin-left: auto;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 }
 
 @media (max-width: 480px) {
@@ -217,6 +222,18 @@
     .news__wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
+    .tabs-doc-form__wrap {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+    .tabs-doc-form {
+        padding-bottom: 15px;
+        width: 280px;
+        .error-message {
+            bottom: 50px;
+        }
+    }
+
 }
 
 @media (max-width: 420px) {

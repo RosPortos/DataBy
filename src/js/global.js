@@ -101,6 +101,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+    function tabDoc() {
+        let btn = document.querySelectorAll('.tabs-doc__btn--trigger');
+        btn.forEach(item => {
+            item.addEventListener('click', function () {
+                this.classList.toggle('active');
+                let form = this.parentElement.querySelector('.tabs-doc-form');
+                form.classList.toggle('active');
+            });
+        });
+
+    }
+    tabDoc();
+
+
+
+
 
 
 

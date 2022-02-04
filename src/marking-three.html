@@ -503,9 +503,19 @@
                                         <div class="tabs-doc__item--name">
                                             Гид по распечатке образцов
                                         </div>
-                                        <a href="#" download="#" class="tabs-doc__item--btn">
-                                            Скачать документ
-                                        </a>
+                                        <div class="tabs-doc__btn">
+                                            <form class="tabs-doc-form">
+                                                <div class="tabs-doc-form__title">
+                                                    Введите ваш e-mail
+                                                </div>
+                                                <div class="tabs-doc-form__wrap">
+                                                    <input type="text" placeholder="Ваш e-mail">
+                                                    <button class="tabs-doc-form__btn">Загрузить</button>
+                                                </div>
+                                                <span class="error-message">Неверный e-mail</span>
+                                            </form>
+                                            <button class="tabs-doc__btn--trigger">Скачать документ</button>
+                                        </div>
                                     </div>
                                     <div class="tabs-doc__item">
                                         <div class="tabs-doc__item--img">
@@ -523,7 +533,7 @@
                         </div>
                     </div>
 
-                    <div class="promotion__social ">
+                    <div class="promotion__social">
                         Поделиться:
                         <ul class="promotion__social-list">
                             <li class="promotion__social-item">
@@ -575,6 +585,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
 
